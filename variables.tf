@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "AWS region"
-  default     = "us-west-1"
+  default     = "us-west-2"
 }
 
 variable "ami_id" {
   description = "ID of the AMI to provision. Default is Ubuntu 16.04 LTS Image"
-  default     = "ami-0ddeb4d4a8fea8be7"
+  default     = "ami-0994c095691a46fb5"
 }
 
 variable "instance_type" {
