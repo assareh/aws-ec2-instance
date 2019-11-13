@@ -4,8 +4,8 @@ variable "aws_region" {
 }
 
 variable "ami_id" {
-  description = "ID of the AMI to provision. Default is Ubuntu 14.04 Base Image"
-  default     = "ami-2e1ef954"
+  description = "ID of the AMI to provision. Default is Ubuntu 16.04 LTS Image"
+  default     = "ami-0ddeb4d4a8fea8be7"
 }
 
 variable "instance_type" {
