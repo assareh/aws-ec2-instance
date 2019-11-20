@@ -13,8 +13,11 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "name" {
-  description = "name to pass to Name tag"
-  default     = "Provisioned by Terraform"
+variable "tags" {
+  description = "descriptive tags for instances deployed"
+  default = {
+    "Name" : "Demo VM deployed by Terraform",
+    "owner" : "Andy Assareh",
+    "ttl" : "1",
+  }
 }
-
