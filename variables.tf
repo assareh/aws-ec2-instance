@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 
 variable "ami_id" {
-  description = "ID of the AMI to provision. Default is Ubuntu 16.04 LTS Image"
+  description = "ID of the AMI to provision. Default is Ubuntu 16.04 LTS Server"
   default     = "ami-0994c095691a46fb5"
 }
 
@@ -13,8 +13,11 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "name" {
-  description = "name to pass to Name tag"
-  default     = "Provisioned by Terraform"
+variable "tags" {
+  description = "descriptive tags for instances deployed"
+  default = {
+    "Name" : "Demo VM deployed by Terraform",
+    "owner" : "Andy Assareh",
+    "ttl" : "1",
+  }
 }
-
