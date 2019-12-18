@@ -10,14 +10,22 @@ variable "ami_id" {
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
-  default     = "t2.micro"
+  default     = "t2.nano"
 }
 
-variable "tags" {
-  description = "descriptive tags for instances deployed"
-  default = {
-    "Name" : "Demo VM deployed by Terraform",
-    "owner" : "Andy Assareh",
-    "ttl" : "1",
-  }
+variable "name" {
+  description = "name to pass to name tag"
+  default = "Provisioned by Terraform"
 }
+
+variable "owner" {
+  description = "owner to pass to owner tag"
+  default = "Andy"
+}
+
+variable "ttl" {
+  description = "Hours until instances are reaped by N.E.P.T.R"
+  default = "1"
+}
+
+
