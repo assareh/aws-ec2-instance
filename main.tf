@@ -13,8 +13,8 @@ resource "aws_instance" "ubuntu" {
 
   tags = {
     Name        = var.name
-    TTL         = var.ttl
-    Owner       = var.owner
+    ttl         = var.ttl
+    owner       = var.owner
     Description = "This is a customer demo description"
   }
 }
