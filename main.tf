@@ -19,23 +19,3 @@ resource "aws_instance" "ubuntu" {
   }
 }
 
-resource "aws_iam_policy" "policy" {
-  name        = "${var.owner}_sentinel_test_policy"
-  path        = "/"
-  description = "Policy to test Sentinel permissions checks"
-
-  policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": [
-        "iam:List*"
-      ],
-      "Effect": "Allow",
-      "Resource": "*"
-    }
-  ]
-}
-EOF
-}

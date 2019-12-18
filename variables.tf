@@ -15,17 +15,17 @@ variable "instance_type" {
 
 variable "name" {
   description = "name to pass to name tag"
-  default = "Provisioned by Terraform"
+  default     = "Provisioned by Terraform"
 }
 
 variable "owner" {
   description = "owner to pass to owner tag"
-  default = "Andy"
+  default     = "Andy"
 }
 
 variable "ttl" {
   description = "Hours until instances are reaped by N.E.P.T.R"
-  default = "1"
+  default     = "1"
 }
 
 
