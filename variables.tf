@@ -20,7 +20,7 @@ variable "name" {
 
 variable "owner" {
   description = "owner to pass to owner tag"
-  default     = "Andy"
+  default     = "Andy Assareh"
 }
 
 variable "ttl" {
