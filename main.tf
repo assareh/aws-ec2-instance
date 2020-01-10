@@ -11,6 +11,11 @@ resource "aws_instance" "ubuntu" {
   instance_type     = var.instance_type
   availability_zone = "${var.aws_region}b"
 
-  tags = var.tags
+  tags = {
+    Name        = var.name
+    ttl         = var.ttl
+    owner       = var.owner
+    Description = "This is a customer5 demo description"
+  }
 }
 
