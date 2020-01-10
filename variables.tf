@@ -28,4 +28,3 @@ variable "ttl" {
   default     = "1"
 }
 
-
