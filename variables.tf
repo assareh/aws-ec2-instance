@@ -28,3 +28,7 @@ variable "ttl" {
   default     = "1"
 }
 
+variable "env" {
+  description = "git branch or environment"
+}
+
