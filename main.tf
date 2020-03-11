@@ -10,7 +10,8 @@ resource "aws_instance" "ubuntu" {
   ami               = var.ami_id
   instance_type     = var.instance_type
   availability_zone = "${var.aws_region}b"
-
+  key_name          = var.key_pair_name
+  
   tags = {
     Name        = var.name
     ttl         = var.ttl
