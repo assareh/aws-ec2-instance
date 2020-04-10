@@ -32,3 +32,6 @@ variable "env" {
   description = "git branch or environment"
 }
 
+variable "key_pair_name" {
+  description = "The key name of the Key Pair to use for the instance"
+}
