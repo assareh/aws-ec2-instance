@@ -13,7 +13,7 @@ resource "aws_instance" "ubuntu" {
   key_name          = var.key_pair_name
   
   tags = {
-    #Name        = var.name
+    Name        = var.name
     ttl         = var.ttl
     owner       = var.owner
     env         = var.env
